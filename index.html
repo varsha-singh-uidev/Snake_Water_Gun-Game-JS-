@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hidden_container">
+            <!-- heading -->
+    <h1 class="head">Snake Water Gun</h1>
+    <!-- their is the container inside the container -->
+    <div class="both_container">
+        <div class="main_container">
+            <h2 class="head2">Choose Your Move</h2>
+            <!-- container that display the option for theuser to chose -->
+            <div class="button_container">
+                <button type="button" class="snake">
+                    <img src="photos/snake.png" alt="snake_cickable_photo">
+                </button>
+                <button type="button" class="water">
+                    <img src="photos/Water.png" alt="Water_cickable_photo">
+                </button>
+                <button type="button" class="gun">
+                    <img src="photos/Gun.png" alt="Gun_cickable_photo">
+                </button>
+            </div>
+        </div>
+        <!-- contaner that display the computer selected choice along with the text -->
+        <div class="computer">
+            <h2 class="head3"></h2>
+            <div class="computer_img_container">
+                <img id="computer-choice" />
+            </div>
+        </div>
+    </div>
+    <!-- rule of the game -->
+    <div class="start_game">
+        <p class="rule"><b>Game Rules:</b><br>
+            First to reach 10 points wins! 🎯<br>
+            The game will restart automatically once someone hits 10.<br>
+            You can also reset manually anytime.<br>
+            When you're ready, press Start to begin!</p>
+        <button type="button" class="start">Start</button>
+    </div>
+    <!-- container table that display the score of the user and the computer -->
+    <table class="display_container">
+        <p class="message"></p>
+        <tr class="display">
+            <th>Your Score</th>
+            <th>Computer Score</th>
+        </tr>
+        <tr>
+            <td class="user_score_display"></td>
+            <td class="comp_score_display"></td>
+        </tr>
+    </table>
+    <!-- reset button -->
+    <button type="button" class="button">Reset</button>
+    </div>
+    <!-- user win display message -->
+    <p class="win_msg"></p>
+    <!-- confetti celebration script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
