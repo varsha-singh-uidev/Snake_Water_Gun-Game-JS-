@@ -1,4 +1,4 @@
-##🐍💧🔫 Snake Water Gun Game
+🐍💧🔫 Snake Water Gun Game
 
 ## Overview
 Snake Water Gun is a simple yet fun web-based game where you play against the computer.
